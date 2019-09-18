@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "login": "ivan1223455",
+      "password": ""
+    },
+    {
+      "login": "petr1223455",
+      "password": ""
+    }
+  ],
+  "emails": [
+    "ivan1223455@mail.ru",
+    "petr1223455@mail.ru"
+  ],
+  "createMessageCount": 6,
+  "subject": "Тестовое задание Selenide",
+  "body": "Тело письма Selenide",
+  "successBody": "Выполнено",
+  "searchString": "Selenide",
+  "unreadMessageIndex": 2,
+  "successMessageIndex": 0,
+  "expectedFileContent": "mdm система"
+}
