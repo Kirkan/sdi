@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$x;
 public class MailBoxPage {
 
     private ElementsCollection allLetters = $$x(".//a[contains(@class, 'list-letter-spinner')]/parent::div/span//span/a/a[@data-id]");
-    private ElementsCollection unreadLetters = $$x(".//a[contains(@class, 'list-letter-spinner')]/parent::div//a[contains(@class, 'js-letter-list-item')][./div/span[@title='Пометить прочитанным' or @data-title='Пометить прочитанным']]");
+    private ElementsCollection unreadLetters = $$x(".//*[@class='dataset__items' or contains(@class, 'list-letter-spinner')]/parent::div//a[contains(@class, 'js-letter-list-item')][./div/span[@title='Пометить прочитанным' or @data-title='Пометить прочитанным']] ");
     private ElementsCollection folders = $$x(".//nav[@class]//div");
     private SelenideElement composeBtn = $x(".//span[@class='compose-button__txt']");
 

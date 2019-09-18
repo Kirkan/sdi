@@ -45,7 +45,7 @@ public class MessagePage {
             switchTo().window(attachWindow);
         }
         switchTo().frame($("iframe"));
-        content = $("pre").getText();
+        content = $("pre").shouldBe(Condition.exist).getText();
         if (WebDriverRunner.getWebDriver().getWindowHandles().size() > 1) {
             switchTo().window(attachWindow).close();
             switchTo().window(0);

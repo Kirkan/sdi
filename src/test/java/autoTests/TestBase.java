@@ -2,11 +2,9 @@ package autoTests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
-import com.codeborne.selenide.logevents.SelenideLogger;
 import com.codeborne.selenide.testng.TextReport;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.MutableCapabilities;
@@ -43,7 +41,7 @@ public class TestBase {
         Configuration.startMaximized = true;
         Configuration.screenshots = false;
         Configuration.fastSetValue = true;
-        Configuration.timeout = 10000;
+        Configuration.timeout = 60000;
         Configuration.reportsFolder = "target/reports";
         startBrowser(browser);
     }

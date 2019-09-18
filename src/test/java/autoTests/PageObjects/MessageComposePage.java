@@ -47,7 +47,7 @@ public class MessageComposePage {
     @Step("Нажимаем кнопку 'Отправить'")
     public void clickSendBtn() {
         $x(".//div[@class='compose-app__footer']/div[@class='compose-app__buttons']/span[@title='Отправить']").shouldBe(Condition.visible).click();
-        $x(".//div[normalize-space(contains(.,'Письмо отправлено'))]").shouldBe(Condition.visible);
+        $x(".//div[@class='layer__header' and normalize-space(contains(.,'Письмо отправлено'))]").shouldBe(Condition.visible);
         $x(".//span[@title='Закрыть']").shouldBe(Condition.visible).click();
     }
 
